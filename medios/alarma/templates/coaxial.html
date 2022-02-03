@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Kawasaki</title>
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<style>
+		ul.paises { 
+			list-style: none;
+			margin: 0 auto;
+			width: 250px;
+		 }
+		 ul.paises li {
+		 	border: 1px solid black;
+		 	cursor: pointer;
+		 	font: 16px Tahoma;
+		 	padding: 10px;
+		 	margin: 10px;
+		 }
+		 .blanco {
+		 	background-color: white;
+		 }
+		 .amarillo {
+		 	background-color: yellow;
+		 }
+		 .azul {
+		 	color: white;
+		 	background-color: blue;
+		 }
+		 .rojo {
+		 	color: white;
+		 	background-color: red;
+		 }
+	</style>
+
+
+</head>
+<body> 
+    <a class="boton" href="http://laweb.com" target="_blank">Regresar</a>
+		<ul class="paises">              
+			<li>PC01</li>             
+			<li>PC02</li>          
+			<li>PC03</li>
+			<li>PC04</li>
+			<li>PC05</li>            
+			<li>PC06</li>
+			<li>PC07</li>
+			<li>PC08</li>
+			<li>PC09</li>
+			<li>PC10</li>
+            <li>PC11</li>             
+			<li>PC12</li>          
+			<li>EC01</li>
+			<li>SPK1</li>
+			<li>TC01</li>            
+			<li>TCX1</li>
+			<li>EX1</li>
+			
+		</ul>
+<script>
+
+
+        $(document).ready(function() {
+ 
+ $(".paises li").click(cambiarColor);
+
+});
+
+function cambiarColor(){
+  $(this).addClass("rojo");
+}
+         //  aca es donde tengo que meter las funciones para que al hacer
+         //  click en un boton cambie de color el boton.
+
+</script>
+</body>
+</html> 

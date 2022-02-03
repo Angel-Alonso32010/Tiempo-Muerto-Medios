@@ -1,0 +1,99 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawasaki</title>
+    <style>
+    $("#mi-boton").click(function(){
+        $(this).toggleClass("btn-danger btn-success");
+      });
+    </style>
+</head>
+<body>
+    <h1>Juan panochas</h1>
+    <a class="boton" href="http://laweb.com" target="_blank">DW01</a>
+    <a class="boton" href="http://laweb.com" target="_blank">DW01</a>
+    <a class="boton" href="http://laweb.com" target="_blank">DW01</a>
+    <a class="boton" href="http://laweb.com" target="_blank">DW01</a>
+    <a class="boton" href="http://laweb.com" target="_blank">DW01</a>
+    <a class="boton" href="http://laweb.com" target="_blank">DW01</a>
+    <a class="boton" href="http://laweb.com" target="_blank">DW01</a>
+    <a class="boton" href="http://laweb.com" target="_blank">DW01</a>
+    <a class="boton" href="http://laweb.com" target="_blank">DW01</a>
+    <a class="boton" href="http://laweb.com" target="_blank">DW01</a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link href="https://getbootstrap.com/docs/3.3/dist/css/bootstrap.min.css" rel=stylesheet>
+<button id="mi-boton" class="btn btn-danger">boton</button>
+</body>
+</html>-->
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Kawasaki</title>
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<style>
+		ul.paises { 
+			list-style: none;
+			margin: 0 auto;
+			width: 250px;
+		 }
+		 ul.paises li {
+		 	border: 1px solid black;
+		 	cursor: pointer;
+		 	font: 16px Tahoma;
+		 	padding: 10px;
+		 	margin: 10px;
+		 }
+		 .blanco {
+		 	background-color: white;
+		 }
+		 .amarillo {
+		 	background-color: yellow;
+		 }
+		 .azul {
+		 	color: white;
+		 	background-color: blue;
+		 }
+		 .rojo {
+		 	color: white;
+		 	background-color: red;
+		 }
+	</style>
+
+
+</head>
+<body> 
+    <a class="boton" href="http://laweb.com" target="_blank">Regresar</a>
+		<ul class="paises">              
+			<li>PMK01</li>             
+			<li>PMK03</li>          
+			<li>PMK04</li>
+			<li>PMK05</li>
+			<li>QM01</li>            
+			<li>MSK01</li>
+			<li>SLK2</li>
+			<li>IS04</li>
+			<li>PM16</li>
+			<li>SPK2</li>
+		</ul>
+<script>
+
+
+        $(document).ready(function() {
+ 
+ $(".paises li").click(cambiarColor);
+
+});
+
+function cambiarColor(){
+  $(this).addClass("rojo");
+}
+         //  aca es donde tengo que meter las funciones para que al hacer
+         //  click en un boton cambie de color el boton.
+
+</script>
+</body>
+</html> 
