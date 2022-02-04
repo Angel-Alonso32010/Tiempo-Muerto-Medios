@@ -5,8 +5,156 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crysler WL</title>
+    <style>
+        body {
+  margin:0;
+  background-color:#fdfafa;
+  min-height:100vh;
+  display:flex;
+  align-items:left;
+  justify-content:left;
+  font-family:Helvetica,Sans-serif;
+}
+a {
+  text-decoration:none;
+  color:#FFF;
+}
+.rainbow-button {
+  width:calc(20vw + 6px);
+  height:calc(8vw + 6px);
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  border-radius:5px;
+  display:flex;
+  align-items:left;
+  justify-content:left;
+  text-transform:uppercase;
+  font-size:2vw;
+  font-weight:bold;
+}
+.rainbow-button:after {
+  content:attr(alt);
+  width:20vw;
+  height:8vw;
+  background-color:#191919;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.rainbow-button:hover {
+  animation:slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+
+
+
+ul.paises { 
+			list-style: none;
+			margin: 0 auto;
+			width: 250px;
+		 }
+		 ul.paises li {
+		 	border: 1px solid black;
+		 	cursor: pointer;
+		 	font: 16px Tahoma;
+		 	padding: 10px;
+		 	margin: 10px;
+		 }
+		 .blanco {
+		 	background-color: white;
+		 }
+		 .amarillo {
+		 	background-color: yellow;
+		 }
+		 .azul {
+		 	color: white;
+		 	background-color: blue;
+		 }
+		 .rojo {
+		 	color: white;
+		 	background-color: red;
+		 }
+
+
+
+
+
+
+    </style>
 </head>
 <body>
-    <h1>Funciona WL</h1>
+
+    <a href="#" class="rainbow-button" alt="Regresar"></a>
+    <ul class="paises">              
+        <li>US14</li>             
+        <li>US15</li>          
+        <li>US16</li>
+        <li>US17</li>
+        <li>US18</li>            
+        <li>US19</li>
+        <li>US20</li>
+        <li>US21</li>
+        <li>US22</li>
+        <li>US23</li>
+        <li>US24</li>             
+        <li>US25</li>          
+        <li>US26</li>
+        <li>US27</li>
+        <li>US28</li>            
+        <li>US29</li>
+        <li>US30</li>
+    	<li>US31</li> 
+        <li>US32</li> 
+        <li>US33</li> 
+        <li>US34</li>
+        <li>US35</li> 
+        
+        
+		<li>SH12</li>          			
+		<li>SH13</li>
+		<li>SH14</li>            
+		<li>SH14</li>			
+		<li>SH15</li>
+		<li>SH16</li>
+		<li>SH17</li>
+        <li>SH18</li>
+        <li>SH19</li>
+        <li>SH20</li>
+        
+        
+		<li>SC02</li>          
+		<li>PS03</li>
+		<li>PS04</li>           
+		<li>EWL1</li>
+		<li>TS01</li>
+        <li>TS04</li>
+        <li>TS05</li>
+        <li>TS06</li>
+        <li>TS07</li>
+        <li>TS08</li>
+        <li>TS09</li>
+        <li>TS11</li>
+
+        <li>TC07</li>          
+		<li>TC08</li>
+		<li>TS03</li>           
+		<li>TS02</li>
+		<li>SM01</li>
+        <li>SM02</li>
+        <li>SM03</li>
+        <li>SM04</li>
+        <li>SM05</li>
+        <li>TC09</li>
+        <li>TP08</li>
+        <li>TP09</li>
+        <li>TP07</li>
+			
+		
+        
+    </ul>
 </body>
 </html>

@@ -23,37 +23,38 @@ def aluminio(request):
     context={
         
     }
-    
     return HttpResponse(template.render(context,request))
 
 def dt (request):
-    return render (request, 'templates/dt.html', {})
+    return render (request, 'dt.html', {})
 
 def Empalme (request):
-    return render (request, 'templates/Empalme.html', {})
+    return render (request, 'Empalme.html', {})
 
 
 def logout (request):
-    return render (request, 'templates/logout', {})
+    return render (request, 'logout', {})
 
 def PrensaManual (request):
-    return render (request, 'templates/PrensaManual.html', {})
+    return render (request, 'PrensaManual.html', {})
 
 def Principal (request):
-    return render (request, 'templates/principal.html', {})
+    return render (request, 'principal.html', {})
 
 def welding (request):
-    return render (request, 'templates/welding.html', {})
+    return render (request, 'welding.html', {})
 
 def wl (request):
-    return render (request, 'templates/wl.html', {})
+    return render (request, 'wl.html', {})
 
 def coax (request):
-    return render (request, 'templates/coaxial.html', {})
+    return render (request, 'coaxial.html', {})
 
 def prepCoaxial (request):
-    return render (request, 'templates/prepCoaxial.html', {})
+    return render (request, 'prepCoaxial.html', {})
 
 def kawa (request):
-    return render (request, 'templates/kawa.html', {})
+    return render (request, 'kawa.html', {})
 
+def tw (request):
+    return render (request, 'tw.html', {})

@@ -5,8 +5,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crysler DT</title>
+    <style>
+        body {
+  margin:0;
+  background-color:#fdfafa;
+  min-height:100vh;
+  display:flex;
+  align-items:left;
+  justify-content:left;
+  font-family:Helvetica,Sans-serif;
+}
+a {
+  text-decoration:none;
+  color:#FFF;
+}
+.rainbow-button {
+  width:calc(20vw + 6px);
+  height:calc(8vw + 6px);
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  border-radius:5px;
+  display:flex;
+  align-items:left;
+  justify-content:left;
+  text-transform:uppercase;
+  font-size:2vw;
+  font-weight:bold;
+}
+.rainbow-button:after {
+  content:attr(alt);
+  width:20vw;
+  height:8vw;
+  background-color:#191919;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.rainbow-button:hover {
+  animation:slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+
+
+
+ul.paises { 
+			list-style: none;
+			margin: 0 auto;
+			width: 250px;
+		 }
+		 ul.paises li {
+		 	border: 1px solid black;
+		 	cursor: pointer;
+		 	font: 16px Tahoma;
+		 	padding: 10px;
+		 	margin: 10px;
+		 }
+		 .blanco {
+		 	background-color: white;
+		 }
+		 .amarillo {
+		 	background-color: yellow;
+		 }
+		 .azul {
+		 	color: white;
+		 	background-color: blue;
+		 }
+		 .rojo {
+		 	color: white;
+		 	background-color: red;
+		 }
+
+
+
+
+
+
+    </style>
 </head>
 <body>
     <h1>Funciona DT</h1>
+
+    <a href="#" class="rainbow-button" alt="Regresar"></a>
+    <ul class="paises">              
+        <li>LA1</li>             
+        <li>LA02</li>          
+        <li>MC01</li>
+        <li>MC02</li>
+        <li>PS01</li>            
+        <li>US01</li>
+        <li>US02</li>
+        <li>US03</li>
+        <li>US04</li>
+        <li>US05</li>
+        <li>US06</li>             
+        <li>US07</li>          
+        <li>US08</li>
+        <li>US09</li>
+        <li>US10</li>            
+        <li>US11</li>
+        <li>US12</li>
+    	<li>US13</li>             
+		<li>SH01</li>          			
+		<li>SH02</li>
+		<li>SH03</li>            
+		<li>SH04</li>			
+		<li>SH05</li>
+		<li>SH06</li>
+		<li>SH08</li>                         
+		<li>TC01</li>          
+		<li>TC02</li>
+		<li>TC03</li>           
+		<li>TC04</li>
+		<li>TC05</li>
+        <li>TC06</li>
+        <li>TP01</li>
+        <li>TP02</li>
+        <li>TP03</li>
+        <li>TP04</li>
+        <li>TP05</li>
+        <li>TP06</li>
+			
+		
+        
+    </ul>
 </body>
 </html>

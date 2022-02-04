@@ -6,20 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>welding</title>
     <style>
-        .boton {
-    border: 1px solid #2e518b; /*anchura, estilo y color borde*/
-padding: 40px; /*espacio alrededor texto*/
-background-color: #5cec98; /*color botón*/
-color: #0e0d0d; /*color texto*/
-text-decoration: none; /*decoración texto*/
-text-transform: uppercase; /*capitalización texto*/
-font-family: 'Helvetica', sans-serif; /*tipografía texto*/
-border-radius: 20px; /*bordes redondos*/
+        body {
+  margin:0;
+  background-color:#fdfafa;
+  min-height:100vh;
+  display:flex;
+  align-items:left;
+  justify-content:left;
+  font-family:Helvetica,Sans-serif;
 }
+a {
+  text-decoration:none;
+  color:#FFF;
+}
+.rainbow-button {
+  width:calc(20vw + 6px);
+  height:calc(8vw + 6px);
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  border-radius:5px;
+  display:flex;
+  align-items:left;
+  justify-content:left;
+  text-transform:uppercase;
+  font-size:2vw;
+  font-weight:bold;
+}
+.rainbow-button:after {
+  content:attr(alt);
+  width:20vw;
+  height:8vw;
+  background-color:#191919;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.rainbow-button:hover {
+  animation:slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+
+
+
+ul.paises { 
+			list-style: none;
+			margin: 0 auto;
+			width: 250px;
+		 }
+		 ul.paises li {
+		 	border: 1px solid black;
+		 	cursor: pointer;
+		 	font: 16px Tahoma;
+		 	padding: 10px;
+		 	margin: 10px;
+		 }
+		 .blanco {
+		 	background-color: white;
+		 }
+		 .amarillo {
+		 	background-color: yellow;
+		 }
+		 .azul {
+		 	color: white;
+		 	background-color: blue;
+		 }
+		 .rojo {
+		 	color: white;
+		 	background-color: red;
+		 }
+
+
+
+
+
+
     </style>
 </head>
 <body>
-    <h1>Funciona welding</h1>
+    <a href="#" class="rainbow-button" alt="Regresar"></a>
 <DIV>
    <li><a class="boton" href="http://laweb.com" target="_blank">DW01</a></li>
     

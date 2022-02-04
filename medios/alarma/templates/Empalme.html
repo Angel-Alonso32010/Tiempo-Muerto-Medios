@@ -5,8 +5,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empalme</title>
+    <style>
+        body {
+  margin:0;
+  background-color:#fdfafa;
+  min-height:100vh;
+  display:flex;
+  align-items:left;
+  justify-content:left;
+  font-family:Helvetica,Sans-serif;
+}
+a {
+  text-decoration:none;
+  color:#FFF;
+}
+.rainbow-button {
+  width:calc(20vw + 6px);
+  height:calc(8vw + 6px);
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  border-radius:5px;
+  display:flex;
+  align-items:left;
+  justify-content:left;
+  text-transform:uppercase;
+  font-size:2vw;
+  font-weight:bold;
+}
+.rainbow-button:after {
+  content:attr(alt);
+  width:20vw;
+  height:8vw;
+  background-color:#191919;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.rainbow-button:hover {
+  animation:slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+
+
+
+ul.paises { 
+			list-style: none;
+			margin: 0 auto;
+			width: 250px;
+		 }
+		 ul.paises li {
+		 	border: 1px solid black;
+		 	cursor: pointer;
+		 	font: 16px Tahoma;
+		 	padding: 10px;
+		 	margin: 10px;
+		 }
+		 .blanco {
+		 	background-color: white;
+		 }
+		 .amarillo {
+		 	background-color: yellow;
+		 }
+		 .azul {
+		 	color: white;
+		 	background-color: blue;
+		 }
+		 .rojo {
+		 	color: white;
+		 	background-color: red;
+		 }
+
+
+
+
+
+
+    </style>
 </head>
 <body>
-    <h1>Fimciona Empalme</h1>
+    
+    
+    <a href="#" class="rainbow-button" alt="Regresar"></a>
+    <ul class="paises">              
+        <li>MS01</li>             
+        <li>MA02</li>          
+        <li>MS03</li>
+        <li>MS04</li>
+        <li>MS05</li>            
+        <li>MS06</li>
+        <li>MS07</li>
+        <li>MS08</li>
+        <li>MSK1</li>
+        <li>TP01</li>
+        <li>TP02</li>             
+        <li>TP03</li>          
+        <li>TP04</li>
+        <li>TP05</li>
+        <li>TP07</li>            
+        <li>TP08</li>
+        <li>TP011</li>
+        <LI>EM01</LI>
+        <LI>EM02</LI>
+        <LI>EM03</LI>
+        <LI>EM04</LI> 
+        <LI>EM05</LI>
+        <LI>EM06</LI>
+        <LI>EM07</LI>
+        <LI>EM08</LI>  
+        <LI>EM09</LI>
+        <LI>EM10</LI>
+        <LI>EM11</LI>
+        <LI>EM12</LI>  
+        <LI>EM13</LI>
+        <LI>EM14</LI>
+        <LI>EM15</LI>
+        <LI>EM16</LI>  
+        <LI>EM17</LI>
+        <LI>EM18</LI>
+        <LI>EM19</LI>
+        <LI>EM20</LI>  
+        <LI>EM21</LI>
+        <LI>EM22</LI>
+        <LI>EM23</LI>
+        <LI>EM24</LI>  
+        <LI>EM25</LI>
+        <LI>EM26</LI>
+        <LI>EM27</LI>
+        <LI>EM28</LI>         
+    </ul>
 </body>
 </html>
