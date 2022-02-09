@@ -15,4 +15,5 @@ urlpatterns =[
     path('coaxial/',views.coax, name= 'coaxial'),
     path('kawa/',views.kawa, name= 'kawa'),
     path('tw/', views.tw, name='tw'),
+    path('prepCoaxial/', views.prepCoaxial, name='prepCoaxial')
 ]
