@@ -6,22 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prensa Manual</title>
 
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
     <style>
 	 
         body {
   margin:0;
-  background-color:#fdfafa;
+  background-color:#000000;
   min-height:100vh;
   display:flex;
   align-items:left;
   justify-content:left;
   font-family:Helvetica,Sans-serif;
 }
-a {
-  text-decoration:none;
-  color:#FFF;
-}
+
 .rainbow-button {
   width:calc(20vw + 6px);
   height:calc(8vw + 6px);
@@ -52,66 +53,290 @@ a {
     background-position:20vw;
   }
 }
-
-<!--lis-->
-
-ul.paises { 
-			list-style: none;
-			margin: 0 auto;
-			width: 250px;
-		 }
-		 ul.paises li {
-		 	border: 1px solid black;
-		 	cursor: pointer;
-		 	font: 16px Tahoma;
-		 	padding: 10px;
-		 	margin: 10px;
-		 }
-		 .blanco {
-		 	background-color: white;
-		 }
-		 .amarillo {
-		 	background-color: yellow;
-		 }
-		 .azul {
-		 	color: white;
-		 	background-color: blue;
-		 }
-		 .rojo {
-		 	color: white;
-		 	background-color: red;
-		 }
-
-
-
-
-
-
     </style>
-
-
-
-
 </head>
 <body>
     
   
     <a href="principal.html" class="rainbow-button" alt="Regresar"></a>
-    <ul class="paises">   
-    <LI>PM01</LI>
-    <LI>PM02</LI>
-    <LI>PM03</LI>
-    <LI>PM04</LI> 
-    <LI>PM05</LI>
-    <LI>PM06</LI>
-    <LI>PM07</LI>
-    <LI>PM08</LI>  
-    <LI>PM09</LI>
-    <LI>PM10</LI>
-    <LI>PM11</LI>
-    <LI>PM12</LI>  
-    <LI>PM13</LI>
-    <LI>PM14</LI>
-    <LI>PM15</LI>
+    <ul class>   
+
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">PM01</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Acción #1</a></li>
+          <li><a href="#">Acción #2</a></li>
+          <li><a href="#">Acción #3</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Acción #4</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">PM02</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Acción #1</a></li>
+          <li><a href="#">Acción #2</a></li>
+          <li><a href="#">Acción #3</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Acción #4</a></li>
+        </ul>
+      </div>
+
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">PM03</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Acción #1</a></li>
+          <li><a href="#">Acción #2</a></li>
+          <li><a href="#">Acción #3</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Acción #4</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">PM04</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Acción #1</a></li>
+          <li><a href="#">Acción #2</a></li>
+          <li><a href="#">Acción #3</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Acción #4</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">PM05</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Acción #1</a></li>
+          <li><a href="#">Acción #2</a></li>
+          <li><a href="#">Acción #3</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Acción #4</a></li>
+        </ul>
+      </div>
+
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">PM06</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Acción #1</a></li>
+          <li><a href="#">Acción #2</a></li>
+          <li><a href="#">Acción #3</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Acción #4</a></li>
+        </ul>
+      </div>
+
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">PM07</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Acción #1</a></li>
+          <li><a href="#">Acción #2</a></li>
+          <li><a href="#">Acción #3</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Acción #4</a></li>
+        </ul>
+      </div>
+    
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">PM08</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Acción #1</a></li>
+          <li><a href="#">Acción #2</a></li>
+          <li><a href="#">Acción #3</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Acción #4</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">PM09</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Acción #1</a></li>
+          <li><a href="#">Acción #2</a></li>
+          <li><a href="#">Acción #3</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Acción #4</a></li>
+        </ul>
+      </div>
+
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">PM10</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Acción #1</a></li>
+          <li><a href="#">Acción #2</a></li>
+          <li><a href="#">Acción #3</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Acción #4</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">PM11</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Acción #1</a></li>
+          <li><a href="#">Acción #2</a></li>
+          <li><a href="#">Acción #3</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Acción #4</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">PM12</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Acción #1</a></li>
+          <li><a href="#">Acción #2</a></li>
+          <li><a href="#">Acción #3</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Acción #4</a></li>
+        </ul>
+      </div>
+    
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">PM13</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Acción #1</a></li>
+          <li><a href="#">Acción #2</a></li>
+          <li><a href="#">Acción #3</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Acción #4</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">PM14</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Acción #1</a></li>
+          <li><a href="#">Acción #2</a></li>
+          <li><a href="#">Acción #3</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Acción #4</a></li>
+        </ul>
+      </div>
+
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">PM15</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="">Acción #1</a></li>
+          <li><a href="#">Acción #2</a></li>
+          <li><a href="#">Acción #3</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Acción #4</a></li>
+        </ul>
+      </div>
+
+
 </body>
 </html>

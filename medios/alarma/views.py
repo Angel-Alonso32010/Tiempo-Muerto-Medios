@@ -1,3 +1,4 @@
+from cgitb import html
 from multiprocessing import context
 from django import template
 from django.shortcuts import render
@@ -19,7 +20,7 @@ def vista1(request):
 
 
 def aluminio(request):
-    template=loader.get_template('aluminio.html')
+    template = loader.get_template('aluminio.html')
     context={
         
     }
@@ -58,3 +59,6 @@ def kawa (request):
 
 def tw (request):
     return render (request, 'tw.html', {})
+
+def totales (request):
+    return render (request, 'totales.html',{})

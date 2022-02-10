@@ -4,7 +4,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 	<meta charset="UTF-8">
-	<title>Kawasaki</title>
+	<title>Coaxial</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -22,17 +22,14 @@
 	 
         body {
   margin:0;
-  background-color:#fdfafa;
+  background-color:#080808;
   min-height:100vh;
   display:flex;
   align-items:left;
   justify-content:left;
   font-family:Helvetica,Sans-serif;
 }
-a {
-  text-decoration:none;
-  color:#FFF;
-}
+
 .rainbow-button {
   width:calc(20vw + 6px);
   height:calc(8vw + 6px);
@@ -65,67 +62,354 @@ a {
 }
 
 
-
-ul.paises { 
-			list-style: none;
-			margin: 0 auto;
-			width: 250px;
-		 }
-		 ul.paises li {
-		 	border: 1px solid black;
-		 	cursor: pointer;
-		 	font: 16px Tahoma;
-		 	padding: 10px;
-		 	margin: 10px;
-		 }
-		 .blanco {
-		 	background-color: white;
-		 }
-		 .amarillo {
-		 	background-color: yellow;
-		 }
-		 .azul {
-		 	color: white;
-		 	background-color: blue;
-		 }
-		 .rojo {
-		 	color: white;
-		 	background-color: red;
-		 }
-
-
-
-		 a:active { color: rgb(250, 9, 61); } 
-
-
     </style>
-	
-
-
 </head>
 <body> 
 	<a href="principal.html" class="rainbow-button" alt="Regresar"></a>
-   
-		<ul class="paises">              
-			<li>PC01</li>           <button class="bi bi-wrench-adjustable">PC01 </button>   <i ></i>  
-			<li>PC02</li>       
-			<li>PC03</li>
-			<li>PC04</li>
-			<li>PC05</li>            
-			<li>PC06</li>
-			<li>PC07</li>
-			<li>PC08</li>
-			<li>PC09</li>
-			<li>PC10</li>
-            <li>PC11</li>             
-			<li>PC12</li>          
-			<li>EC01</li>
-			<li>SPK1</li>
-			<li>TC01</li>            
-			<li>TCX1</li>
-			<li>EX1</li>
+   <ul>
+		            
+            <div class="btn-group">
+				<button type="button" class="btn btn-danger">PC01</button>
+			  
+				<button type="button" class="btn btn-danger dropdown-toggle"
+						data-toggle="dropdown">
+				  <span class="caret"></span>
+				  <span class="sr-only">Desplegar menú</span>
+				</button>
+			  
+				<ul class="dropdown-menu" role="menu">
+				  <li><a href="#">Juan Sandoval</a></li>
+				  <li><a href="#">Mini pig</a></li>
+				  <li><a href="#">Pitorrin</a></li>
+				  <li class="divider"></li>
+				  <li><a href="#">Acción #4</a></li>
+				</ul>
+			  </div>
+
+
+<!---->
+
+
+				<ul class="equipos">              
+					<div class="btn-group">
+						<button type="button" class="btn btn-danger">PC02</button>
+	  
+							<button type="button" class="btn btn-danger dropdown-toggle"
+											data-toggle="dropdown">
+							  <span class="caret"></span>
+							  <span class="sr-only">Desplegar menú</span>
+								</button>
+	  
+								<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Juan Sandoval</a></li>
+								<li><a href="#">Mini pig</a></li>
+								<li><a href="#">Pitorrin</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Acción #4</a></li>
+								</ul>
+							</div>
+
+<!---->
+
+						<ul class="equipos">              
+							<div class="btn-group">
+								<button type="button" class="btn btn-danger">PC03</button>
+							
+								<button type="button" class="btn btn-danger dropdown-toggle"
+										data-toggle="dropdown">
+								<span class="caret"></span>
+								<span class="sr-only">Desplegar menú</span>
+								</button>
+							
+								<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Juan Sandoval</a></li>
+								<li><a href="#">Mini pig</a></li>
+								<li><a href="#">Pitorrin</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Acción #4</a></li>
+								</ul>
+							</div>
+
+
+							<ul class="equipos">              
+								<div class="btn-group">
+									<button type="button" class="btn btn-danger">PC04</button>
+								  
+									<button type="button" class="btn btn-danger dropdown-toggle"
+											data-toggle="dropdown">
+									  <span class="caret"></span>
+									  <span class="sr-only">Desplegar menú</span>
+									</button>
+								  
+									<ul class="dropdown-menu" role="menu">
+									  <li><a href="#">Juan Sandoval</a></li>
+									  <li><a href="#">Mini pig</a></li>
+									  <li><a href="#">Pitorrin</a></li>
+									  <li class="divider"></li>
+									  <li><a href="#">Acción #4</a></li>
+									</ul>
+								  </div>
+
+
+
+
+
+
+								  <ul class="equipos">              
+									<div class="btn-group">
+										<button type="button" class="btn btn-danger">PC05</button>
+									  
+										<button type="button" class="btn btn-danger dropdown-toggle"
+												data-toggle="dropdown">
+										  <span class="caret"></span>
+										  <span class="sr-only">Desplegar menú</span>
+										</button>
+									  
+										<ul class="dropdown-menu" role="menu">
+										  <li><a href="#">Juan Sandoval</a></li>
+										  <li><a href="#">Mini pig</a></li>
+										  <li><a href="#">Pitorrin</a></li>
+										  <li class="divider"></li>
+										  <li><a href="#">Acción #4</a></li>
+										</ul>
+									  </div>
+
+
+
+
+									  <ul class="equipos">              
+										<div class="btn-group">
+											<button type="button" class="btn btn-danger">PC06</button>
+										  
+											<button type="button" class="btn btn-danger dropdown-toggle"
+													data-toggle="dropdown">
+											  <span class="caret"></span>
+											  <span class="sr-only">Desplegar menú</span>
+											</button>
+										  
+											<ul class="dropdown-menu" role="menu">
+											  <li><a href="#">Juan Sandoval</a></li>
+											  <li><a href="#">Mini pig</a></li>
+											  <li><a href="#">Pitorrin</a></li>
+											  <li class="divider"></li>
+											  <li><a href="#">Acción #4</a></li>
+											</ul>
+										  </div>
+
+
+
+
+					<ul class="equipos">              
+					<div class="btn-group">
+						<button type="button" class="btn btn-danger">PC07</button>
+						
+						<button type="button" class="btn btn-danger dropdown-toggle"
+								data-toggle="dropdown">
+							<span class="caret"></span>
+							<span class="sr-only">Desplegar menú</span>
+						</button>
+						
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">Juan Sandoval</a></li>
+							<li><a href="#">Mini pig</a></li>
+							<li><a href="#">Pitorrin</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Acción #4</a></li>
+						</ul>
+						</div>
+
+
+
+
+				  <ul class="equipos">              
+					<div class="btn-group">
+						<button type="button" class="btn btn-danger">PC08</button>
+						
+						<button type="button" class="btn btn-danger dropdown-toggle"
+								data-toggle="dropdown">
+							<span class="caret"></span>
+							<span class="sr-only">Desplegar menú</span>
+						</button>
+						
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">Juan Sandoval</a></li>
+							<li><a href="#">Mini pig</a></li>
+							<li><a href="#">Pitorrin</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Acción #4</a></li>
+						</ul>
+						</div>
+
+
+
+						<ul class="equipos">              
+						<div class="btn-group">
+							<button type="button" class="btn btn-danger">PC010</button>
+							
+							<button type="button" class="btn btn-danger dropdown-toggle"
+									data-toggle="dropdown">
+								<span class="caret"></span>
+								<span class="sr-only">Desplegar menú</span>
+							</button>
+							
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Juan Sandoval</a></li>
+								<li><a href="#">Mini pig</a></li>
+								<li><a href="#">Pitorrin</a></li>
+								<li class="divider"></li>
+								<li><a href="#">Acción #4</a></li>
+							</ul>
+							</div>
+
+
+
+
+
+							<ul class="equipos">              
+							<div class="btn-group">
+								<button type="button" class="btn btn-danger">PC011</button>
+								
+								<button type="button" class="btn btn-danger dropdown-toggle"
+										data-toggle="dropdown">
+									<span class="caret"></span>
+									<span class="sr-only">Desplegar menú</span>
+								</button>
+								
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">Juan Sandoval</a></li>
+									<li><a href="#">Mini pig</a></li>
+									<li><a href="#">Pitorrin</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Acción #4</a></li>
+								</ul>
+								</div>
+
+
+
+
+
+
+								<ul class="equipos">              
+								<div class="btn-group">
+									<button type="button" class="btn btn-danger">PC012</button>
+									
+									<button type="button" class="btn btn-danger dropdown-toggle"
+											data-toggle="dropdown">
+										<span class="caret"></span>
+										<span class="sr-only">Desplegar menú</span>
+									</button>
+									
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Juan Sandoval</a></li>
+										<li><a href="#">Mini pig</a></li>
+										<li><a href="#">Pitorrin</a></li>
+										<li class="divider"></li>
+										<li><a href="#">Acción #4</a></li>
+									</ul>
+									</div>
+
+
+
+										<ul class="equipos">              
+										<div class="btn-group">
+											<button type="button" class="btn btn-danger">EC01</button>
+											
+											<button type="button" class="btn btn-danger dropdown-toggle"
+													data-toggle="dropdown">
+												<span class="caret"></span>
+												<span class="sr-only">Desplegar menú</span>
+											</button>
+											
+											<ul class="dropdown-menu" role="menu">
+												<li><a href="#">Juan Sandoval</a></li>
+												<li><a href="#">Mini pig</a></li>
+												<li><a href="#">Pitorrin</a></li>
+												<li class="divider"></li>
+												<li><a href="#">Acción #4</a></li>
+											</ul>
+											</div>
+
+
+
+
+											<ul class="equipos">              
+												<div class="btn-group">
+													<button type="button" class="btn btn-danger">SPK1</button>
+												  
+													<button type="button" class="btn btn-danger dropdown-toggle"
+															data-toggle="dropdown">
+													  <span class="caret"></span>
+													  <span class="sr-only">Desplegar menú</span>
+													</button>
+												  
+													<ul class="dropdown-menu" role="menu">
+													  <li><a href="#">Juan Sandoval</a></li>
+													  <li><a href="#">Mini pig</a></li>
+													  <li><a href="#">Pitorrin</a></li>
+													  <li class="divider"></li>
+													  <li><a href="#">Acción #4</a></li>
+													</ul>
+												  </div>
+
+
+
+								<ul class="equipos">              
+								<div class="btn-group">
+									<button type="button" class="btn btn-danger">TC01</button>
+									
+									<button type="button" class="btn btn-danger dropdown-toggle"
+											data-toggle="dropdown">
+										<span class="caret"></span>
+										<span class="sr-only">Desplegar menú</span>
+									</button>
+									
+									<ul class="dropdown-menu" role="menu">
+										<li><a href="#">Juan Sandoval</a></li>
+										<li><a href="#">Mini pig</a></li>
+										<li><a href="#">Pitorrin</a></li>
+										<li class="divider"></li>
+										<li><a href="#">Acción #4</a></li>
+									</ul>
+									</div>
+
+									<ul class="equipos">              
+									<div class="btn-group">
+										<button type="button" class="btn btn-danger">TCX1</button>
+										
+										<button type="button" class="btn btn-danger dropdown-toggle"
+												data-toggle="dropdown">
+											<span class="caret"></span>
+											<span class="sr-only">Desplegar menú</span>
+										</button>
+										
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="#">Juan Sandoval</a></li>
+											<li><a href="#">Mini pig</a></li>
+											<li><a href="#">Pitorrin</a></li>
+											<li class="divider"></li>
+											<li><a href="#">Acción #4</a></li>
+										</ul>
+										</div>
+		
+										<ul class="equipos">              
+											<div class="btn-group">
+												<button type="button" class="btn btn-danger">EX1</button>
+											  
+												<button type="button" class="btn btn-danger dropdown-toggle"
+														data-toggle="dropdown">
+												  <span class="caret"></span>
+												  <span class="sr-only">Desplegar menú</span>
+												</button>
+											  
+												<ul class="dropdown-menu" role="menu">
+												  <li><a href="#">Juan Sandoval</a></li>
+												  <li><a href="#">Mini pig</a></li>
+												  <li><a href="#">Pitorrin</a></li>
+												  <li class="divider"></li>
+												  <li><a href="#">Acción #4</a></li>
+												</ul>
+											  </div>
 			
-		</ul>
 
 		
 <script>
@@ -133,7 +417,7 @@ ul.paises {
 
         $(document).ready(function() {
  
- $(".paises li").click(cambiarColor);
+ $(".equipos li").click(cambiarColor);
 
 });
 

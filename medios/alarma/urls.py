@@ -1,3 +1,4 @@
+from unicodedata import name
 from alarma import views
 from django.urls import path
 
@@ -15,5 +16,7 @@ urlpatterns =[
     path('coaxial/',views.coax, name= 'coaxial'),
     path('kawa/',views.kawa, name= 'kawa'),
     path('tw/', views.tw, name='tw'),
-    path('prepCoaxial/', views.prepCoaxial, name='prepCoaxial')
+    path('prepCoaxial/', views.prepCoaxial, name='prepCoaxial'),
+    path('totales/', views.totales, name='totales'),
+    
 ]
