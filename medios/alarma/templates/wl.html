@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crysler WL</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <style>
         body {
   margin:0;
@@ -46,111 +52,970 @@
     background-position:20vw;
   }
 }
-
-
-
-ul.paises { 
-			list-style: none;
-			margin: 0 auto;
-			width: 250px;
-		 }
-		 ul.paises li {
-		 	border: 1px solid black;
-		 	cursor: pointer;
-		 	font: 16px Tahoma;
-		 	padding: 10px;
-		 	margin: 10px;
-		 }
-		 .blanco {
-		 	background-color: white;
-		 }
-		 .amarillo {
-		 	background-color: yellow;
-		 }
-		 .azul {
-		 	color: white;
-		 	background-color: blue;
-		 }
-		 .rojo {
-		 	color: white;
-		 	background-color: red;
-		 }
-
-
-
-
-
-
-    </style>
+</style>
 </head>
+
+
+
 <body>
 
     <a href="principal.html" class="rainbow-button" alt="Regresar"></a>
-    <ul class="paises">              
-        <li>US14</li>             
-        <li>US15</li>          
-        <li>US16</li>
-        <li>US17</li>
-        <li>US18</li>            
-        <li>US19</li>
-        <li>US20</li>
-        <li>US21</li>
-        <li>US22</li>
-        <li>US23</li>
-        <li>US24</li>             
-        <li>US25</li>          
-        <li>US26</li>
-        <li>US27</li>
-        <li>US28</li>            
-        <li>US29</li>
-        <li>US30</li>
-    	<li>US31</li> 
-        <li>US32</li> 
-        <li>US33</li> 
-        <li>US34</li>
-        <li>US35</li> 
-        
-        
-		<li>SH12</li>          			
-		<li>SH13</li>
-		<li>SH14</li>            
-		<li>SH14</li>			
-		<li>SH15</li>
-		<li>SH16</li>
-		<li>SH17</li>
-        <li>SH18</li>
-        <li>SH19</li>
-        <li>SH20</li>
-        
-        
-		<li>SC02</li>          
-		<li>PS03</li>
-		<li>PS04</li>           
-		<li>EWL1</li>
-		<li>TS01</li>
-        <li>TS04</li>
-        <li>TS05</li>
-        <li>TS06</li>
-        <li>TS07</li>
-        <li>TS08</li>
-        <li>TS09</li>
-        <li>TS11</li>
+    <ul> 
+      
+      
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">US14</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
 
-        <li>TC07</li>          
-		<li>TC08</li>
-		<li>TS03</li>           
-		<li>TS02</li>
-		<li>SM01</li>
-        <li>SM02</li>
-        <li>SM03</li>
-        <li>SM04</li>
-        <li>SM05</li>
-        <li>TC09</li>
-        <li>TP08</li>
-        <li>TP09</li>
-        <li>TP07</li>
-			
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">US15</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">US16</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">US17</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">US18</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">US19</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">US20</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">US21</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">US22</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">US23</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">US24</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">US25</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">US26</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">US27</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">US28</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">US29</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">US30</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">US31</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">US32</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">US33</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">US34</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">SH12</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+        
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">SH13</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">SH14</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">SH15</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">SH16</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">SH17</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">SH18</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">SH19</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">SH20</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+	
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">SC02</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">PS03</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">PS04</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">EWL1</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">TS01</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+        
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">TS02</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">TS03</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
 		
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">TS04</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">TS05</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">TS06</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">TS07</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+      
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">TS08</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">TS09</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">TS11</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+        
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">SM01</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">SM02</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">SM03</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">SM04</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">SM05</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+		
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">TC09</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">TP07</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">TP08</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">TP09</button>
+      
+        <button type="button" class="btn btn-danger dropdown-toggle"
+                data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Desplegar menú</span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Antonio Peña</a></li>
+          <li><a href="#">Daniel Valadez</a></li>
+          <li><a href="#">Juan Sandoval</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Juan Zepeda</a></li>
+        </ul>
+      </div>
         
     </ul>
 </body>

@@ -18,5 +18,6 @@ urlpatterns =[
     path('tw/', views.tw, name='tw'),
     path('prepCoaxial/', views.prepCoaxial, name='prepCoaxial'),
     path('totales/', views.totales, name='totales'),
+     path('ranking/', views.ranking, name='ranking'),
     
 ]
