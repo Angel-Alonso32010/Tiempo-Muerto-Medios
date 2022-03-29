@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,20 +8,72 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+
+  <meta charset="utf-8">
+  <title>Simple Cronometro en javascript</title>
+  <meta name="title" content="Cronometro en javascript">
+  <meta name="description" content="Cronometro en javascript">
+  <meta name="keywords" content="código,cronometro,javascript">
+
+<script>
+var inicio=0;
+var timeout=0;
+
+function empezarDetener(elemento) //como parametro resivo toda la etiqueta imput
+{
+  if(timeout==0)
+  {
+    // empezar el cronometro
+
+    elemento.value="Detener";
+
+    // Obtenemos el valor actual
+          inicio=new Date().getTime();
+
+    // iniciamos el proceso
+    funcionando();
+  }else{
+    // detemer el cronometro
+    elemento.value="Empezar";
+    clearTimeout(timeout);
+    timeout=0;
+  }
+}
+
+function funcionando()
+{
+  // obteneos la fecha actual
+  var actual = new Date().getTime();
+
+  // obtenemos la diferencia entre la fecha actual y la de inicio
+  var diff = new Date(actual-inicio);
+      
+      console.log(diff);
+
+  // mostramos la diferencia entre la fecha actual y la inicial
+  var result=LeadingZero(diff.getUTCHours())+":"+LeadingZero(diff.getUTCMinutes())+":"+LeadingZero(diff.getUTCSeconds());
+  document.getElementById('crono').innerHTML = result;
+
+  // Indicamos que se ejecute esta función nuevamente dentro de 1 segundo
+      timeout=setTimeout("funcionando()",1000);
+}
+
+/* Funcion que pone un 0 delante de un valor si es necesario */
+function LeadingZero(Time) {
+  return (Time < 10) ? "0" + Time : + Time;
+}
+</script>
 
 <style>
-  .button{
-
-  }
+  .crono_wrapper {text-align:center;width:200px;}
 </style>
-
-
 </head>
-
-
-
-
 <body>
+
+
+  
+
 
 <div class="container">
   <h2>Desforre central</h2>
@@ -38,19 +91,66 @@
           <h4 class="modal-title"></h4>
         </div>
         <div class="modal-body">
-          <p></p>
-          <div>
-            <li><button class="bnt">MS01</button></li>
-           <li> <button>MS02</button></li>
-           <li> <button>MS03</button></li>
-           <li> <button>MS04</button></li>
-           <li> <button>MS05</button></li>
-            <li><button>MS06</button></li>
-           <li> <button>MS07</button></li>
-           <li> <button>MS08</button></li>
-           <li><button>MSK1</button></li>
+          <div tabindex="-1" class="modal fade in" id="myModal" role="dialog" aria-hidden="true" aria-labelledby="myModalLabel" style="display: block;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" aria-hidden="true" type="button" data-dismiss="modal">
+                            ×
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">
+                            Seleccione los datos que se agregarán.
+                        </h4>
+                    </div>
+                    <div class="modal-body" id="tanchu">
+                        <div class="bs-example" data-example-id="hoverable-table">
+                            <table class="table table-hover" id="btable">
+                                <thead>
+                                <tr>
+          
+                                    <th>#</th>
+                                                                             <th> Nombre </th>
+                                                                             <th> Tiempo </th>
+                                                                             <th> Número de paros </th>
+                                </tr>
+                                </thead>
+                                <tbody id="tableble">
+          
+                                <tr id="1"><td id="chebox0"><input name="num1000.398445" class="checkbox" type="checkbox"></td>
+                                  <td>MS01</td>
+                                  <td><div class="crono_wrapper">
+                                    <h2 id='crono'>00:00:00</h2>
+                                    <input type="button" value="Empezar" onclick="empezarDetener(this);">
+                                  </div>
+                                </td><td><!--variable contador --></td></tr><tr id="2"><td id="chebox1"><input name="Fairfax_zones.397739" class="checkbox" type="checkbox"></td>
+                                  <td>MS02</td>
+                                  <td>
+                                    <div class="crono_wrapper">
+                                      <h2 id='crono'>00:00:00</h2>
+                                      <input type="button" value="Empezar" onclick="empezarDetener(this);">
+                                    </div>
+                                  </td><td>471</td></tr><tr id="4"><td id="chebox2"><input name="World_Capital.397738" class="checkbox" type="checkbox"></td>
+                                    <td>MS03</td>
+                                    <td>
+                                      <div class="crono_wrapper">
+                                        <h2 id='crono'>00:00:00</h2>
+                                        <input type="button" value="Empezar" onclick="empezarDetener(this);">
+                                      </div>
+                                    </td><td>331</td></tr><tr id="7"><td id="chebox3"><input name="_3dml1.397337" class="checkbox" type="checkbox"></td><td>_3dml1.397337</td><td>XML</td><td>226</td></tr><tr id="11"><td id="chebox4"><input name="hyd2_4l.397336" class="checkbox" type="checkbox"></td><td>hyd2_4l.397336</td><td>XML</td><td>708</td></tr><tr id="16"><td id="chebox5"><input name="building.397335" class="checkbox" type="checkbox"></td><td>building.397335</td><td>XML</td><td>837</td></tr></tbody>
+                            </table>
+          
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                                                     <button class = "btn btn-default" type = "button" data-dispats = "modal"> Cerrar
+                        </button>
+                        <button class="btn btn-primary" onclick="intimenu()" type="button">
+                                                             Descargar
+                        </button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal -->
           </div>
-        </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
@@ -87,15 +187,31 @@
           <div class="modal-body">
             <p></p>
             <div>
-              <li><button>TP01</button></li>
+             
+
+              <div style="text-align: center;"   >
+                <button>TP01</button>
+               
+            </div>
+
+ 
+              <br>
               <li><button>TP02</button></li>
+              <br>
               <li><button>TP03</button></li>
+              <br>
               <li><button>TP04</button></li>
+              <br>
               <li><button>TP05</button></li>
+              <br>
               <li><button>TP06</button></li>
+              <br>
               <li><button>TP07</button></li>
+              <br>
               <li><button>TP08</button></li>
+              <br>
               <li><button>TP11</button></li>
+              <br>
               <li><button>ST04</button></li>
             </div>
           </div>
@@ -131,7 +247,16 @@
           <div class="modal-body">
             <p></p>
             <div>
-              <li><button>EM01</button></li>
+              <td> <button>EM01</button></td>
+             
+              <td>
+                <div class="form-group row">
+                  
+                 <td> <div class="col-sm-2">
+                    <input type="submit" value="Eliminar" class="btn btn-danger" />
+                  </div></td>
+                </div>
+              </td>
               <li><button>EM02</button></li>
               <li><button>EM03</button></li>
               <li><button>EM04</button></li>
@@ -146,7 +271,9 @@
               <li><button>EM13</button></li>
               <li><button>EM14</button></li>
               <li><button>EM15</button></li>
+              <br>
               <li><button>EM16</button></li>
+              <br>
               <li><button>EM17</button></li>
               <li><button>EM18</button></li>
               <li><button>EM19</button></li>
@@ -173,6 +300,20 @@
 
 
 </div>
+
+
+<div class="crono_wrapper">
+	<h2 id='crono'>00:00:00</h2>
+	<input type="button" value="Empezar" onclick="empezarDetener(this);">
+</div>
+
+
+
+
+
+
+
+
 
 </body>
 </html>
